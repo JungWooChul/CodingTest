@@ -19,4 +19,6 @@ class Solution:
         for let in sorted(let_log.keys()): # 로그를 제외한 부분 먼저 정렬
             for let_tmp in sorted(let_log[let]): # 문자가 같다면 로그 정렬
                 answer.append(let_tmp+' '+let) # 문자로 구성된 로그는 식별
-        return answer + dig_log # 숫자 로그는 입력 순서대로
+        answer.extend(dig_log) # 숫자 로그는 입력 순서대로
+        
+        return answer
