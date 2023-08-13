@@ -5,8 +5,7 @@ class Solution:
         anagrams_dict = {key : [] for key in set(anagrams_set)}
         
         for anagram in strs:
-            tmp_key = "".join(sorted(list(anagram)))
-            anagrams_dict[tmp_key].append(anagram)
+            anagrams_dict["".join(sorted(list(anagram)))].append(anagram)
         
         return anagrams_dict.values()
           
