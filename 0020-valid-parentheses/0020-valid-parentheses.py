@@ -18,5 +18,8 @@ class Solution:
                 except:
                     return False
                 
-        return True if len(stack) == 0 else False
+        if len(stack) == 0:
+            return True
+        else:
+            return False
             
