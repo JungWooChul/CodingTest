@@ -5,7 +5,6 @@ class Solution:
         for i in range(len(s)):
             key_str = self.nonDupString(i, s)
             hashmap[key_str] = len(key_str)
-        print(hashmap)
         return max(hashmap.values())
     
     def nonDupString(self, idx: int, s:str) -> str:
